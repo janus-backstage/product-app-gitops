@@ -1,0 +1,21 @@
+app:
+  name: product-app
+  namespace: product-app-dev
+  cluster: .apps.ocp4.quitala.eu
+
+git:
+  branch: main
+  repo: https://github.com/janus-backstage/product-app.git
+  org: janus-backstage
+  name: product-app
+  host: github.com
+  token: ''
+  webhookSecret: ''
+
+
+image:
+  registry: Openshift
+  organization: 
+  host: image-registry.openshift-image-registry.svc:5000
+  name: product-app
+  tag: latest
